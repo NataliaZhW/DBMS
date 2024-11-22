@@ -1,7 +1,7 @@
 USE Acadamy_318_SQL
 GO
 
-CREATE TABLE Direction
+CREATE TABLE Directions
 (
 direction_id	TINYINT			PRIMARY KEY,
 direction_name	NVARCHAR(150)	NOT NULL
@@ -12,7 +12,7 @@ CREATE TABLE Groups
 group_id		INT				PRIMARY KEY,
 group_name	NVARCHAR(16)	NOT NULL,
 direction		TINYINT			NOT NULL	
-	CONSTRAINT FK_GroupsDirections FOREIGN KEY  REFERENCES Direction(direction_id)
+	CONSTRAINT FK_GroupsDirections FOREIGN KEY  REFERENCES Directions(direction_id)
 );
 
 CREATE TABLE Students
