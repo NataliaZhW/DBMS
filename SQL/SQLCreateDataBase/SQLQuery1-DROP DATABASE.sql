@@ -1,0 +1,1 @@
+--DROP DATABASE Acadamy_318_SQL;
