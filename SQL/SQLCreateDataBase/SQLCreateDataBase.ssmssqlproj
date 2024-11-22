@@ -22,17 +22,11 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="SQLQuery1-CreateDataBase.sql">
+        <FileNode Name="SQLQuery1-CREATE DATABASE.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery1-CreateDataBase.sql</FullPath>
-        </FileNode>
-        <FileNode Name="SQLQuery1-DROP DATABASE.sql">
-          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
-          <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
-          <AssociatedConnUserName />
-          <FullPath>SQLQuery1-DROP DATABASE.sql</FullPath>
+          <FullPath>SQLQuery1-CREATE DATABASE.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
