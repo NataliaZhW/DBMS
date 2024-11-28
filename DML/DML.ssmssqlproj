@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="CreateTables">
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="DML">
   <Items>
     <LogicalFolder Name="Connections" Type="2" Sorted="true">
       <Items>
         <ConnectionNode Name="WIN-S3FLAGBG853\SQLEXPRESS:WIN-S3FLAGBG853\user">
-          <Created>2024-11-22T22:24:54.5252698+03:00</Created>
+          <Created>2024-11-27T18:46:34.7151518+03:00</Created>
           <Type>SQL</Type>
           <Server>WIN-S3FLAGBG853\SQLEXPRESS</Server>
           <UserName />
           <Authentication>Windows Authentication</Authentication>
-          <InitialDB>master</InitialDB>
+          <InitialDB>AcademySQL318_HW</InitialDB>
           <LoginTimeout>30</LoginTimeout>
           <TrustServerCertificate>True</TrustServerCertificate>
           <HostNameInServerCertificate />
@@ -22,35 +22,41 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
-        <FileNode Name="SQLQuery1 - CREATE Students branch.sql">
+        <FileNode Name="SQLQuery1 - INSERT Directions.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery1 - CREATE Students branch.sql</FullPath>
+          <FullPath>SQLQuery1 - INSERT Directions.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery2 - CREATE Teachers.sql">
+        <FileNode Name="SQLQuery2 - INSERT Groups.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery2 - CREATE Teachers.sql</FullPath>
+          <FullPath>SQLQuery2 - INSERT Groups.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery3 - CREATE Disceplines.sql">
+        <FileNode Name="SQLQuery3 - INSERT Students.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery3 - CREATE Disceplines.sql</FullPath>
+          <FullPath>SQLQuery3 - INSERT Students.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery4 - Relation to Disciplines.sql">
+        <FileNode Name="SQLQuery4 - SELECT Students.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery4 - Relation to Disciplines.sql</FullPath>
+          <FullPath>SQLQuery4 - SELECT Students.sql</FullPath>
         </FileNode>
-        <FileNode Name="SQLQuery5 - Scedule.sql">
+        <FileNode Name="SQLQuery5 - SELECT Students2.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
-          <FullPath>SQLQuery5 - Scedule.sql</FullPath>
+          <FullPath>SQLQuery5 - SELECT Students2.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery6 - AGREGATION.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery6 - AGREGATION.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>
