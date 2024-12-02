@@ -22,6 +22,24 @@
     </LogicalFolder>
     <LogicalFolder Name="Queries" Type="0" Sorted="true">
       <Items>
+        <FileNode Name="SQLQuery - INSERT Disciplins.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery - INSERT Disciplins.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery - INSERT TeacherDisciplinesRelation.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery - INSERT TeacherDisciplinesRelation.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery - INSERT Teachers.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery - INSERT Teachers.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery1 - INSERT Directions.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
@@ -57,6 +75,12 @@
           <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>SQLQuery6 - AGREGATION.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery7 - SELECT.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery7 - SELECT.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

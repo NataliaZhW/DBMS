@@ -1,4 +1,4 @@
-USE Acadamy_318_SQL;
+USE PD_318_DML;
 
 SELECT 
 		 
@@ -12,6 +12,6 @@ FROM Students, Groups, Directions
 WHERE Students.[group] = Groups.group_id
 			AND Groups.direction = Directions.direction_id
 			--AND group_name = N'PD_321'
-			AND direction_name LIKE N'%графика%'
+			--AND direction_name LIKE N'%графика%'
 ORDER BY [Возраст] DESC
 ;
