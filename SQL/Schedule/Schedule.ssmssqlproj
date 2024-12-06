@@ -28,11 +28,47 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery0 - ALTER Groups.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery1 - INSERT StacionarToSchedule.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery1 - INSERT StacionarToSchedule.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery1.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
           <AssociatedConnUserName />
           <FullPath>SQLQuery1.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery2 - SELECT FROM Schedule.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery2 - SELECT FROM Schedule.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery22 - CHECK PROCEDURES.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery22 - CHECK PROCEDURES.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery3 - CREATE PROCEDURE ScheduleForGroup.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery3 - CREATE PROCEDURE ScheduleForGroup.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery4 - DELETE FROM Schedule.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery4 - DELETE FROM Schedule.sql</FullPath>
+        </FileNode>
+        <FileNode Name="SQLQuery5 - StacionatToSchedule PROCEDURE.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery5 - StacionatToSchedule PROCEDURE.sql</FullPath>
         </FileNode>
       </Items>
     </LogicalFolder>

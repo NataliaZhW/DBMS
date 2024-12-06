@@ -1,4 +1,4 @@
-USE Acadamy_318_SQL;
+USE PD_318_DML--Acadamy_318_SQL;
 
 SELECT 
 		Directions.direction_name		AS N'Направление обучения',
@@ -6,6 +6,7 @@ SELECT
 FROM Directions, Groups--, Students
 WHERE  Groups.direction = Directions.direction_id --AND [group] = Groups.group_id
 GROUP BY direction_name
+HAVING COUNT(Groups.group_id)>3
 ;
 
 SELECT 

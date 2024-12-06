@@ -76,6 +76,12 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery6 - AGREGATION.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery7 - INSERT Holidays.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery7 - INSERT Holidays.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery7 - SELECT.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
