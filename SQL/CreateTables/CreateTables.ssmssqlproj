@@ -52,6 +52,12 @@
           <AssociatedConnUserName />
           <FullPath>SQLQuery5 - Scedule.sql</FullPath>
         </FileNode>
+        <FileNode Name="SQLQuery7 - ALTER Holidays ADD duration.sql">
+          <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
+          <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
+          <AssociatedConnUserName />
+          <FullPath>SQLQuery7 - ALTER Holidays ADD duration.sql</FullPath>
+        </FileNode>
         <FileNode Name="SQLQuery7 - CREATE Holidays.sql">
           <AssociatedConnectionMoniker>8c91a03d-f9b4-46c0-a305-b5dcc79ff907:WIN-S3FLAGBG853\SQLEXPRESS:True</AssociatedConnectionMoniker>
           <AssociatedConnSrvName>WIN-S3FLAGBG853\SQLEXPRESS</AssociatedConnSrvName>
