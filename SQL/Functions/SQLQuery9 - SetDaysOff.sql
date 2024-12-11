@@ -19,8 +19,15 @@ BEGIN
 			INSERT DaysOFF ([date], holiday)
 			VALUES (DATEFROMPARTS(@year, 03,08), (SELECT holiday_id FROM Holidays WHERE holiday_name LIKE N'8%'));
 		END
+
+	IF NOT EXISTS (SELECT day_off_id FROM DaysOFF WHERE [date] = dbo.GetEasterDate(@year))
+		BEGIN
+			INSERT DaysOFF ([date], holiday)
+			VALUES (dbo.GetEasterDate(@year), (SELECT holiday_id FROM Holidays WHERE holiday_name LIKE N'Пасха'));
+		END
 	EXEC sp_MayHolidaysFor @year;
 	EXEC sp_SummerHolidaysFor @year;
 
 END
---SELECT * From Holidays;
+GO
+SELECT * From Holidays;

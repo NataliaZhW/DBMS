@@ -65,7 +65,7 @@ BEGIN
 		BEGIN
 			IF NOT EXISTS (SELECT lesson_id FROM Schedule 
 						WHERE [date]=@date AND [time]=@time 
-						--AND [group]=@group AND discipline=@discipline
+						AND [group]=@group --AND discipline=@discipline
 						)
 				BEGIN
 					INSERT	Schedule
@@ -81,7 +81,7 @@ BEGIN
 			
 			IF NOT EXISTS (SELECT lesson_id FROM Schedule 
 						WHERE [date]=@date AND [time]=DATEADD(MINUTE, 90, @time) 
-						--AND [group]=@group AND discipline=@discipline
+						AND [group]=@group --AND discipline=@discipline
 						)
 				BEGIN
 					INSERT	Schedule

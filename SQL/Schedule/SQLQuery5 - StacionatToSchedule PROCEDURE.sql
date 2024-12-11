@@ -38,30 +38,40 @@ BEGIN
 		PRINT(@number_of_lesson);
 		PRINT(@time);
 		--Проверяем, есть ли данная дата в таблице выходных
-		IF NOT EXISTS (SELECT [date] FROM DaysOFF 
+		IF NOT EXISTS (SELECT day_off_id FROM DaysOFF [date]
 						WHERE [date]=@date)
 			BEGIN
 			--Проверяем, есть ли данная дата в таблице расписания, стоит ли там на наше время занятие.
-			--Не думаю что надо проверять группу и дисциплину, так как если время занято,
+			--Не думаю что надо проверять дисциплину, так как если время занято,
 			--то еще пару другого предмета туда же не надо ставить
 				IF NOT EXISTS (SELECT lesson_id FROM Schedule 
 								WHERE [date]=@date AND [time]=@time 
-								--AND [group]=@group AND discipline=@discipline
+								AND [group]=@group --AND discipline=@discipline
 								)
 				BEGIN
 					INSERT	Schedule
 							([date], [time], [group], discipline, teacher, spent)
 					VALUES	(@date,  @time,	 @group, @discipline, @teacher, IIF(@date < GETDATE(), 1, 0))
-					--нумерацию урока надо увеличивать здесь, а не за пределами IF
+					--нумерацию урока надо увеличивать здесь, а не за пределами IF ????
 					SET @number_of_lesson = @number_of_lesson + 1; --!!
 				END
+				--если нет, т.е. если время не свободно то проверяем, 
+				--какая пара там стоит, если наша, то увеличиваем счетчик
+				ELSE IF EXISTS (SELECT lesson_id FROM Schedule 
+								WHERE [date]=@date AND [time]=@time 
+								AND [group]=@group AND discipline=@discipline--
+								)
+					BEGIN					
+						--нумерацию урока надо увеличивать 
+						SET @number_of_lesson = @number_of_lesson + 1; --!!
+					END
 				PRINT('----------------------');
 
 				PRINT(@number_of_lesson);
 				PRINT(DATEADD(MINUTE, 90,@time));
 				IF NOT EXISTS (SELECT lesson_id FROM Schedule 
 								WHERE [date]=@date AND [time]=DATEADD(MINUTE, 90, @time) 
-								--AND [group]=@group AND discipline=@discipline
+								AND [group]=@group --AND discipline=@discipline
 								)
 				BEGIN
 					INSERT	Schedule
@@ -69,7 +79,14 @@ BEGIN
 					VALUES	(@date, DATEADD(MINUTE, 90, @time), @group, @discipline, @teacher, IIF(@date < GETDATE(), 1, 0))
 					SET @number_of_lesson = @number_of_lesson + 1; --!!
 				END
-
+				ELSE IF EXISTS (SELECT lesson_id FROM Schedule 
+								WHERE [date]=@date AND [time]=DATEADD(MINUTE, 90, @time) 
+								AND [group]=@group AND discipline=@discipline--
+								)
+					BEGIN					
+						--нумерацию урока надо увеличивать 
+						SET @number_of_lesson = @number_of_lesson + 1; --!!
+					END
 				PRINT('======================');
 			END
 
