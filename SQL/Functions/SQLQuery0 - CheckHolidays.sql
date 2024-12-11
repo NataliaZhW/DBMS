@@ -7,13 +7,15 @@ SET DATEFIRST 1;
 --EXEC sp_SummerHolidaysFor 2024;
 --
 
---EXEC sp_SetDaysOffFor 2025;
+EXEC sp_SetDaysOffFor 2025;
+PRINT (dbo.GetEasterDate(2025));
+PRINT (DATENAME(WEEKDAY, dbo.GetEasterDate(2025)))
 
-SELECT 
-[date], 
-DATENAME(WEEKDAY, [date]),
-holiday_name
---FROM DaysOFF, Holidays WHERE holidey = holidey_id
-FROM DaysOFF JOIN Holidays ON(holiday = holiday_id)
-;
-SELECT * From Holidays;
+--SELECT 
+--[date], 
+--DATENAME(WEEKDAY, [date]),
+--holiday_name
+----FROM DaysOFF, Holidays WHERE holidey = holidey_id
+--FROM DaysOFF JOIN Holidays ON(holiday = holiday_id)
+--;
+--SELECT * From Holidays;

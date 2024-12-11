@@ -65,24 +65,24 @@ BEGIN
 		BEGIN
 			IF NOT EXISTS (SELECT lesson_id FROM Schedule 
 						WHERE [date]=@date AND [time]=@time 
-						AND [group]=@group AND discipline=@discipline)
+						--AND [group]=@group AND discipline=@discipline
+						)
 				BEGIN
 					INSERT	Schedule
 							([date], [time], [group], discipline, teacher, spent)
 					VALUES	(@date,  @time,	 @group, @discipline, @teacher, IIF(@date < GETDATE(), 1, 0))
 					SET @number_of_lesson = @number_of_lesson + 1;
 				END
-		END
-	PRINT('----------------------');
+		
+			PRINT('----------------------');
 
-	PRINT(@number_of_lesson);
-	PRINT(DATEADD(MINUTE, 90,@time));
-	IF NOT EXISTS (SELECT [date] FROM DaysOFF 
-					WHERE [date]=@date)
-		BEGIN
+			PRINT(@number_of_lesson);
+			PRINT(DATEADD(MINUTE, 90,@time));
+			
 			IF NOT EXISTS (SELECT lesson_id FROM Schedule 
 						WHERE [date]=@date AND [time]=DATEADD(MINUTE, 90, @time) 
-						AND [group]=@group AND discipline=@discipline)
+						--AND [group]=@group AND discipline=@discipline
+						)
 				BEGIN
 					INSERT	Schedule
 							([date], [time], [group], discipline, teacher, spent)
